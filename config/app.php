@@ -155,6 +155,14 @@ return [
         App\Core\Providers\AuthServiceProvider::class,
         App\Core\Providers\EventServiceProvider::class,
 
+        /**
+         * Domains
+         */
+        App\Domains\DomainsServiceProvider::class,
+
+        /**
+         * Applications
+         */
         App\Applications\Standard\Providers\StandardAppServiceProvider::class
     ],
 
