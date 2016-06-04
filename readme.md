@@ -12,6 +12,14 @@ Aside from the different structure, two packages has been added to the default l
 #### How it was designed?
 If you're interested on how this repository was built and understand better it's concepts, please **[check the video series](https://codecasts.com.br/lesson/modularizando-laravel-01-criando-nosso-core)** at **CODECASTS**.
 
+
+#### Composer Project Creation
+To easily start your project using this structure, just use composer
+
+```
+composer create codecasts/laravel your_app_name
+```
+
 --
 
 ### Original Readme
