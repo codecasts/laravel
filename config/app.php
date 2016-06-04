@@ -148,6 +148,11 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
+        /**
+         * Packages
+         */
+        Migrator\MigrationServiceProvider::class,
+
         /*
          * Application Service Providers...
          */
