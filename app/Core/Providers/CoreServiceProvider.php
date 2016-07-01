@@ -8,18 +8,14 @@ class CoreServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap any application services.
-     *
-     * @return void
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'core');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'core');
     }
 
     /**
      * Register any application services.
-     *
-     * @return void
      */
     public function register()
     {

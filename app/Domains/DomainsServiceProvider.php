@@ -11,33 +11,29 @@ class DomainsServiceProvider extends ServiceProvider
 {
     // Declare Migrations
     use MigratorTrait;
-    
+
     /**
      * Register the service provider.
-     *
-     * @return void
      */
     public function register()
     {
         $this->registerUsers();
-        
+
         $this->registerMigrations();
     }
 
     protected function registerMigrations()
     {
         $this->migrations([
-            
+
         ]);
     }
-    
+
     /**
-     * User Domain
+     * User Domain.
      */
     protected function registerUsers()
     {
         $this->app->singleton(UsersRepositoryContract::class, UsersRepository::class);
     }
-
-
 }

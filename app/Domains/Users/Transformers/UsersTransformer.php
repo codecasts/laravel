@@ -5,7 +5,7 @@ namespace App\Domains\Users\Transformers;
 use League\Fractal\TransformerAbstract;
 use App\Domains\Users\User;
 
-class UsersTransformers extends TransformerAbstract
+class UsersTransformer extends TransformerAbstract
 {
     public function transform(User $user)
     {

@@ -7,10 +7,9 @@ use Illuminate\Contracts\Routing\Registrar as Router;
 
 class StandardAppServiceProvider extends AbstractApplicationServiceProvider
 {
-
     public function boot()
     {
-        $this->loadViewsFrom($this->getApplicationDir() . '/resources/views', 'standard');
+        $this->loadViewsFrom($this->getApplicationDir().'/resources/views', 'standard');
     }
 
     public function register()
@@ -19,25 +18,24 @@ class StandardAppServiceProvider extends AbstractApplicationServiceProvider
     }
 
     /**
-     * Register application routes
+     * Register application routes.
      *
      * @param Router $router
-     * @return void
      */
-    function registerRoutes(Router $router)
+    public function registerRoutes(Router $router)
     {
         $attributes = [
             'namespace' => 'App\Applications\Standard\Http\Controllers',
-            'middleware' => ['web']
+            'middleware' => ['web'],
         ];
 
         $router->group($attributes, function ($router) {
-            require $this->getApplicationDir() . '/Http/routes.php';
+            require $this->getApplicationDir().'/Http/routes.php';
         });
     }
 
     /**
-     * Get dir of application
+     * Get dir of application.
      *
      * @return string
      */

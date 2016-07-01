@@ -2,7 +2,6 @@
 
 namespace App\Core\Providers;
 
-
 use Illuminate\Contracts\Routing\Registrar as Router;
 use Illuminate\Support\ServiceProvider;
 
@@ -10,8 +9,6 @@ abstract class AbstractApplicationServiceProvider extends ServiceProvider
 {
     /**
      * Register the service provider.
-     *
-     * @return void
      */
     public function register()
     {
@@ -19,15 +16,14 @@ abstract class AbstractApplicationServiceProvider extends ServiceProvider
     }
 
     /**
-     * Register application routes
+     * Register application routes.
      *
      * @param Router $router
-     * @return void
      */
     abstract protected function registerRoutes(Router $router);
 
     /**
-     * Get dir of application
+     * Get dir of application.
      *
      * @return string
      */

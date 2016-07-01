@@ -6,5 +6,4 @@ use Artesaos\Warehouse\Contracts\Segregated\CrudRepository;
 
 interface UsersRepository extends CrudRepository
 {
-
 }
