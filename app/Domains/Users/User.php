@@ -2,10 +2,19 @@
 
 namespace App\Domains\Users;
 
+use App\Domains\Users\Presenters\UserPresenter;
+use App\Support\ViewPresenter\Presentable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
+    use Presentable;
+
+    /**
+     * @var string View presenter class name.
+     */
+    protected $presenter = UserPresenter::class;
+    
     /**
      * The attributes that are mass assignable.
      *
