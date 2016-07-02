@@ -9,7 +9,8 @@
         "laravel/framework": "5.2.*",
         "artesaos/warehouse": "2.x-dev",
         "league/fractal": "^0.13.0",
-        "artesaos/migrator": "^1.0"
+        "artesaos/migrator": "^1.0",
+        "artesaos/shield": "^1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -51,4 +52,3 @@
         "preferred-install": "dist"
     }
 }
-
