@@ -1,5 +1,7 @@
 ## Laravel PHP Framework - Modularized Fork
 
+[![Total Downloads](https://poser.pugx.org/codecasts/laravel/d/total.svg)](https://packagist.org/packages/codecasts/laravel)
+
 
 ### Additional Readme
 This Laravel Application fork is a easy start point using the **modularized concepts** and **Domain-Driven Development** highly endorsed by **CODECASTS**.
@@ -8,9 +10,10 @@ Aside from the different structure, two packages has been added to the default l
 
 - [artesaos/warehouse](https://github.com/artesaos/warehouse) - For repository management.
 - [artesaos/migrator] (https://github.com/artesaos/warehouse) - For namespaced migrations inside the application's domains.
+- [artesaos/shield] (https://github.com/artesaos/shield) - For reusable validation rules.
 
 #### How it was designed?
-If you're interested on how this repository was built and understand better it's concepts, please **[check the video series](https://codecasts.com.br/lesson/modularizando-laravel-01-criando-nosso-core)** at **CODECASTS**.
+If you speak portuguese and you're interested on how this repository was built and understand better it's concepts, please **[check the video series](https://codecasts.com.br/lesson/modularizando-laravel-01-criando-nosso-core)** at **CODECASTS**.
 
 
 #### Composer Project Creation
@@ -22,7 +25,7 @@ composer create codecasts/laravel your_app_name
 
 --
 
-### Original Readme
+### Original Laravel Readme
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
 [![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
