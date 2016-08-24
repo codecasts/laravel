@@ -4,9 +4,42 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ed9df8b872992035f068a7fe461a635a",
-    "content-hash": "76036da3b5b55b91dbe1e1affa01bf9e",
+    "hash": "9b1b19e67ed1432056c1ba3da02f7c5f",
+    "content-hash": "18a18b814379da4b699e343c5fd7cfd9",
     "packages": [
+        {
+            "name": "artesaos/migrator",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/artesaos/migrator.git",
+                "reference": "e6106c6939042ce476b7b15bf2073b22e3b30a31"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/artesaos/migrator/zipball/e6106c6939042ce476b7b15bf2073b22e3b30a31",
+                "reference": "e6106c6939042ce476b7b15bf2073b22e3b30a31",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Migrator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Diego Hernandes",
+                    "email": "diego@hernandev.com"
+                }
+            ],
+            "description": "Namespaced Migrations for Laravel 5.1+",
+            "time": "2016-06-02 02:12:12"
+        },
         {
             "name": "classpreloader/classpreloader",
             "version": "3.0.0",
