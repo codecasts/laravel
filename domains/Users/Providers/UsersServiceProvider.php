@@ -2,8 +2,9 @@
 
 namespace App\Domains\Users\Providers;
 
-use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Collection;
+use App\Domains\Base\Providers\ServiceProvider;
+use App\Domains\Users\Database\Migrations\CreateUsersTable;
+use App\Domains\Users\Database\Migrations\CreatePasswordResetsTable;
 
 /**
  *
@@ -11,27 +12,20 @@ use Illuminate\Support\Collection;
 class UsersServiceProvider extends ServiceProvider
 {
     /**
+     * @var string
+     */
+    protected $alias = 'users';
+
+    /**
      * @var array $bindings
      */
     protected $bindings = [
 
     ];
 
-    /**
-     *
-     */
-    public function register()
-    {
-        $this->registerBindings(collect($this->bindings));
-    }
+    protected $migrations = [
+        CreateUsersTable::class,
+        CreatePasswordResetsTable::class,
+    ];
 
-    /**
-     * @param Collection $bindings
-     */
-    protected function registerBindings(Collection $bindings)
-    {
-        $bindings->each(function($abstraction, $concrete) {
-            $this->app->bindShared($abstraction, $concrete);
-        });
-    }
 }
