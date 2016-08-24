@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http;
+namespace App\Core\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
