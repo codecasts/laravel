@@ -31,6 +31,11 @@ abstract class ServiceProvider extends LaravelServiceProvider
     protected $migrations = [];
 
     /**
+     * @var array List of model factories to load.
+     */
+    protected $factories = [];
+
+    /**
      * @var bool Enable translations for this Domain.
      */
     protected $hasTranslations = false;
@@ -45,6 +50,9 @@ abstract class ServiceProvider extends LaravelServiceProvider
 
         // Register migrations.
         $this->registerMigrations(collect($this->migrations));
+
+        // Register model factories.
+        $this->registerFactories(collect($this->factories));
 
         // Register translations
         if ($this->hasTranslations) {
@@ -72,6 +80,13 @@ abstract class ServiceProvider extends LaravelServiceProvider
     protected function registerMigrations(Collection $migrations)
     {
         $this->migrations($migrations->all());
+    }
+
+    protected function registerFactories(Collection $factories)
+    {
+        $factories->each(function($factoryName) {
+            (new $factoryName)->define();
+        });
     }
 
     /**
