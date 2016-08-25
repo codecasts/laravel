@@ -45,12 +45,12 @@ services:
       - cache
 
   # Laravel Queues
-  queue:
-    image: ambientum/php:7.0
-    container_name: laravel-queue
-    command: php artisan queue:listen
-    volumes:
-      - .:/var/www/app
-    links:
-      - mysql
-      - cache
+#  queue:
+#    image: ambientum/php:7.0
+#    container_name: laravel-queue
+#    command: php artisan queue:listen
+#    volumes:
+#      - .:/var/www/app
+#    links:
+#      - mysql
+#      - cache
