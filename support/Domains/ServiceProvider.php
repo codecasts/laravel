@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Domains\Base\Providers;
+namespace App\Support\Domains;
 
 use ReflectionClass;
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;

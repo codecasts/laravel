@@ -2,7 +2,7 @@
 
 namespace App\Domains\Users\Providers;
 
-use App\Domains\Base\Providers\ServiceProvider;
+use App\Support\Domains\ServiceProvider;
 use App\Domains\Users\Database\Factories\UserFactory;
 use App\Domains\Users\Database\Migrations\CreateUsersTable;
 use App\Domains\Users\Database\Migrations\CreatePasswordResetsTable;
