@@ -10,11 +10,11 @@
 | to using a Closure or controller method. Build something great!
 |
 */
+/** @var \Illuminate\Routing\Router $router */
 
-Route::get('/', function () {
+$router->get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+$router->get('/home', 'HomeController@index');

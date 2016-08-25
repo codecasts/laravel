@@ -18,9 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "app/",
-            "App\\Support\\": "support/",
-            "App\\Domains\\": "domains/"
+            "App\\": "app/"
         }
     },
     "autoload-dev": {
