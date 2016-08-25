@@ -31,6 +31,11 @@ abstract class ServiceProvider extends LaravelServiceProvider
     protected $migrations = [];
 
     /**
+     * @var array List of seeders provided by Domain.
+     */
+    protected $seeders = [];
+
+    /**
      * @var array List of model factories to load.
      */
     protected $factories = [];
@@ -50,6 +55,9 @@ abstract class ServiceProvider extends LaravelServiceProvider
 
         // Register migrations.
         $this->registerMigrations(collect($this->migrations));
+
+        // Register seeders.
+        $this->registerSeeders(collect($this->seeders));
 
         // Register model factories.
         $this->registerFactories(collect($this->factories));
@@ -80,6 +88,16 @@ abstract class ServiceProvider extends LaravelServiceProvider
     protected function registerMigrations(Collection $migrations)
     {
         $this->migrations($migrations->all());
+    }
+
+    /**
+     * Register the defined seeders.
+     *
+     * @param Collection $seeders
+     */
+    protected function registerSeeders(Collection $seeders)
+    {
+        $this->seeders($seeders->all());
     }
 
     protected function registerFactories(Collection $factories)

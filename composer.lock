@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9b1b19e67ed1432056c1ba3da02f7c5f",
-    "content-hash": "18a18b814379da4b699e343c5fd7cfd9",
+    "hash": "076c8a8b9c30be22955954532efc54d3",
+    "content-hash": "ce434610c9b144c8f5d57ebe3dda4384",
     "packages": [
         {
             "name": "artesaos/migrator",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/artesaos/migrator.git",
-                "reference": "bd74b991256cd748596cf1204c9495f8ffbbbf10"
+                "reference": "899a45beacac44a5f672a8cc7541d3b51ef8953c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/artesaos/migrator/zipball/bd74b991256cd748596cf1204c9495f8ffbbbf10",
-                "reference": "bd74b991256cd748596cf1204c9495f8ffbbbf10",
+                "url": "https://api.github.com/repos/artesaos/migrator/zipball/899a45beacac44a5f672a8cc7541d3b51ef8953c",
+                "reference": "899a45beacac44a5f672a8cc7541d3b51ef8953c",
                 "shasum": ""
             },
             "type": "library",
@@ -38,7 +38,7 @@
                 }
             ],
             "description": "Namespaced Migrations for Laravel 5.1+",
-            "time": "2016-08-25 00:11:30"
+            "time": "2016-08-25 03:36:30"
         },
         {
             "name": "classpreloader/classpreloader",
