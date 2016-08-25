@@ -9,16 +9,16 @@
     "packages": [
         {
             "name": "artesaos/migrator",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/artesaos/migrator.git",
-                "reference": "e6106c6939042ce476b7b15bf2073b22e3b30a31"
+                "reference": "bd74b991256cd748596cf1204c9495f8ffbbbf10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/artesaos/migrator/zipball/e6106c6939042ce476b7b15bf2073b22e3b30a31",
-                "reference": "e6106c6939042ce476b7b15bf2073b22e3b30a31",
+                "url": "https://api.github.com/repos/artesaos/migrator/zipball/bd74b991256cd748596cf1204c9495f8ffbbbf10",
+                "reference": "bd74b991256cd748596cf1204c9495f8ffbbbf10",
                 "shasum": ""
             },
             "type": "library",
@@ -38,7 +38,7 @@
                 }
             ],
             "description": "Namespaced Migrations for Laravel 5.1+",
-            "time": "2016-06-02 02:12:12"
+            "time": "2016-08-25 00:11:30"
         },
         {
             "name": "classpreloader/classpreloader",
@@ -341,16 +341,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.3.1",
+            "version": "v5.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "1268b6249358a11d430f8b97ff820afdf099f103"
+                "reference": "2213ca11f6fa849ca7c96308934cc6881ab434e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/1268b6249358a11d430f8b97ff820afdf099f103",
-                "reference": "1268b6249358a11d430f8b97ff820afdf099f103",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/2213ca11f6fa849ca7c96308934cc6881ab434e8",
+                "reference": "2213ca11f6fa849ca7c96308934cc6881ab434e8",
                 "shasum": ""
             },
             "require": {
@@ -464,7 +464,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2016-08-24 09:54:18"
+            "time": "2016-08-24 23:23:29"
         },
         {
             "name": "league/flysystem",
