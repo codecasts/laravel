@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Applications\Authentication\Providers;
+namespace App\Units\Auth\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
-class AuthenticationServiceProvider extends ServiceProvider
+class UnitServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap any application services.
@@ -23,6 +23,7 @@ class AuthenticationServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->register()
+        $this->app->register(AuthServiceProvider::class);
+        $this->app->register(RouteServiceProvider::class);
     }
 }

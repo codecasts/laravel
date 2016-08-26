@@ -3,12 +3,12 @@
 namespace App\Domains\Users\Database\Factories;
 
 use App\Domains\Users\User;
-use App\Support\Factory\BaseFactory;
+use Codecasts\Domain\ModelFactory;
 
 /**
  * Class UserFactory.
  */
-class UserFactory extends BaseFactory
+class UserFactory extends ModelFactory
 {
     /**
      * @var User Factory for the User Model.

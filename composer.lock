@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "076c8a8b9c30be22955954532efc54d3",
-    "content-hash": "ce434610c9b144c8f5d57ebe3dda4384",
+    "hash": "c6d0f4562d9c84f849d07ce49627c056",
+    "content-hash": "fe0d7bddf35c2632a761739e0024f4e0",
     "packages": [
         {
             "name": "artesaos/migrator",
@@ -39,6 +39,112 @@
             ],
             "description": "Namespaced Migrations for Laravel 5.1+",
             "time": "2016-08-25 03:36:30"
+        },
+        {
+            "name": "artesaos/shield",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/artesaos/shield.git",
+                "reference": "80f0549ce681095ffd69ce57b83d91d65ca5d003"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/artesaos/shield/zipball/80f0549ce681095ffd69ce57b83d91d65ca5d003",
+                "reference": "80f0549ce681095ffd69ce57b83d91d65ca5d003",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/filesystem": "~5.1 || ~5.2 || ~5.3",
+                "illuminate/support": "~5.1 || ~5.2 || ~5.3"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "Artesaos\\Shield\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vinicius Reis",
+                    "email": "luiz.vinicius73@gmail.com"
+                },
+                {
+                    "name": "Diego Hernandes",
+                    "email": "diego@hernandev.com"
+                }
+            ],
+            "description": "A simple way to centralize your validation rules for laravel",
+            "homepage": "https://github.com/artesaos/shield",
+            "keywords": [
+                "ddd",
+                "form request",
+                "laravel",
+                "modules",
+                "rules",
+                "validation"
+            ],
+            "time": "2016-08-24 18:45:20"
+        },
+        {
+            "name": "artesaos/warehouse",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/artesaos/warehouse.git",
+                "reference": "7f1b7db62038654ad41923d9439117a539ca8aef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/artesaos/warehouse/zipball/7f1b7db62038654ad41923d9439117a539ca8aef",
+                "reference": "7f1b7db62038654ad41923d9439117a539ca8aef",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "~5",
+                "illuminate/database": "~5",
+                "illuminate/pagination": "~5",
+                "illuminate/support": "~5",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "illuminate/container": "~5",
+                "illuminate/http": "~5",
+                "league/fractal": "~0.13"
+            },
+            "suggest": {
+                "league/fractal": "Form json response use fractal (0.13+)"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Artesaos\\Warehouse\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vinicius Reis",
+                    "email": "luiz.vinicius73@gmail.com"
+                }
+            ],
+            "description": "Artesãos Warehouse V2 - A simple and direct approach to repositories!",
+            "keywords": [
+                "eloquent",
+                "laravel",
+                "laravel5",
+                "model",
+                "repository",
+                "warehouse"
+            ],
+            "time": "2016-08-12 14:09:42"
         },
         {
             "name": "classpreloader/classpreloader",
@@ -93,6 +199,110 @@
                 "preload"
             ],
             "time": "2015-11-09 22:51:51"
+        },
+        {
+            "name": "codecasts/domain",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/codecasts/domain.git",
+                "reference": "51ab6dc8d48ba1a87c7dab28a50f694c6eab2e5b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/codecasts/domain/zipball/51ab6dc8d48ba1a87c7dab28a50f694c6eab2e5b",
+                "reference": "51ab6dc8d48ba1a87c7dab28a50f694c6eab2e5b",
+                "shasum": ""
+            },
+            "require": {
+                "artesaos/migrator": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Codecasts\\Domain\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Diego Hernandes",
+                    "email": "diego@hernandev.com"
+                }
+            ],
+            "description": "Domain Support Providers and Base Classes",
+            "time": "2016-08-26 06:37:16"
+        },
+        {
+            "name": "codecasts/presenter",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/codecasts/presenter.git",
+                "reference": "2361ebe3b88154f91e76f277d0278e931859aefc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/codecasts/presenter/zipball/2361ebe3b88154f91e76f277d0278e931859aefc",
+                "reference": "2361ebe3b88154f91e76f277d0278e931859aefc",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Codecasts\\Presenter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Diego Hernandes",
+                    "email": "diego@hernandev.com"
+                }
+            ],
+            "description": "View Presenter Package from CODECASTS",
+            "time": "2016-08-26 06:03:54"
+        },
+        {
+            "name": "codecasts/support",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/codecasts/support.git",
+                "reference": "097f3e5a1f945a96119169c84fe9d7a7c623d3ec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/codecasts/support/zipball/097f3e5a1f945a96119169c84fe9d7a7c623d3ec",
+                "reference": "097f3e5a1f945a96119169c84fe9d7a7c623d3ec",
+                "shasum": ""
+            },
+            "require": {
+                "artesaos/migrator": "^1.1",
+                "artesaos/shield": "^2.0",
+                "artesaos/warehouse": "^2.0",
+                "codecasts/domain": "^1.0",
+                "codecasts/presenter": "^1.0"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Diego Hernandes",
+                    "email": "diego@hernandev.com"
+                }
+            ],
+            "description": "codecasts/laravel support meta-package.",
+            "time": "2016-08-26 06:26:24"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -2599,16 +2809,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "5.5.2",
+            "version": "5.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "46ec2d1522ae8c9a12aca6b7650e0be78bbb0502"
+                "reference": "08745ede58cb02b4043adadc09a01c09e698e3f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/46ec2d1522ae8c9a12aca6b7650e0be78bbb0502",
-                "reference": "46ec2d1522ae8c9a12aca6b7650e0be78bbb0502",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/08745ede58cb02b4043adadc09a01c09e698e3f7",
+                "reference": "08745ede58cb02b4043adadc09a01c09e698e3f7",
                 "shasum": ""
             },
             "require": {
@@ -2673,20 +2883,20 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2016-08-18 11:10:44"
+            "time": "2016-08-25 04:45:28"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
-            "version": "3.2.4",
+            "version": "3.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "4e83390f64e7ce04fcaec2ce95cd72823b431d19"
+                "reference": "46b249b43fd2ed8e127aa0fdb3cbcf56e9bc0e49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/4e83390f64e7ce04fcaec2ce95cd72823b431d19",
-                "reference": "4e83390f64e7ce04fcaec2ce95cd72823b431d19",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/46b249b43fd2ed8e127aa0fdb3cbcf56e9bc0e49",
+                "reference": "46b249b43fd2ed8e127aa0fdb3cbcf56e9bc0e49",
                 "shasum": ""
             },
             "require": {
@@ -2732,7 +2942,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2016-08-17 09:33:51"
+            "time": "2016-08-26 05:51:59"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",

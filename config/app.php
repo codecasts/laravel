@@ -185,7 +185,7 @@ return [
         /**
          * Domains
          */
-        App\Domains\DomainServiceProvider::class,
+        App\Domains\Users\Providers\UsersServiceProvider::class,
 
     ],
 
