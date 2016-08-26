@@ -2,6 +2,7 @@
 
 namespace App\Core\Console;
 
+use App\Core\Routes\Console;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
@@ -35,6 +36,7 @@ class Kernel extends ConsoleKernel
      */
     protected function commands()
     {
-        require app_path('Core/routes/console.php');
+        (new Console())->register();
+        //require app_path('Core/Routes/console.php');
     }
 }

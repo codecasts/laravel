@@ -271,16 +271,16 @@
         },
         {
             "name": "codecasts/support",
-            "version": "1.0.0",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/codecasts/support.git",
-                "reference": "097f3e5a1f945a96119169c84fe9d7a7c623d3ec"
+                "reference": "a6e57439dbdc0376a104af36a8e00736e3631be0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codecasts/support/zipball/097f3e5a1f945a96119169c84fe9d7a7c623d3ec",
-                "reference": "097f3e5a1f945a96119169c84fe9d7a7c623d3ec",
+                "url": "https://api.github.com/repos/codecasts/support/zipball/a6e57439dbdc0376a104af36a8e00736e3631be0",
+                "reference": "a6e57439dbdc0376a104af36a8e00736e3631be0",
                 "shasum": ""
             },
             "require": {
@@ -291,6 +291,11 @@
                 "codecasts/presenter": "^1.0"
             },
             "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Codecasts\\Support\\": "src"
+                }
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -302,7 +307,7 @@
                 }
             ],
             "description": "codecasts/laravel support meta-package.",
-            "time": "2016-08-26 06:26:24"
+            "time": "2016-08-26 08:23:08"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -2809,16 +2814,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "5.5.3",
+            "version": "5.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "08745ede58cb02b4043adadc09a01c09e698e3f7"
+                "reference": "3e6e88e56c912133de6e99b87728cca7ed70c5f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/08745ede58cb02b4043adadc09a01c09e698e3f7",
-                "reference": "08745ede58cb02b4043adadc09a01c09e698e3f7",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/3e6e88e56c912133de6e99b87728cca7ed70c5f5",
+                "reference": "3e6e88e56c912133de6e99b87728cca7ed70c5f5",
                 "shasum": ""
             },
             "require": {
@@ -2883,7 +2888,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2016-08-25 04:45:28"
+            "time": "2016-08-26 07:11:44"
         },
         {
             "name": "phpunit/phpunit-mock-objects",

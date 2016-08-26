@@ -9,9 +9,11 @@ use App\Domains\Users\Database\Migrations\CreatePasswordResetsTable;
 use App\Domains\Users\Database\Seeders\UsersSeeder;
 
 /**
+ * Class DomainServiceProvider.
  *
+ * @package App\Domains\Users\Providers
  */
-class UsersServiceProvider extends ServiceProvider
+class DomainServiceProvider extends ServiceProvider
 {
     /**
      * @var string
