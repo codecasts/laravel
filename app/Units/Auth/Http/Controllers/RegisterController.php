@@ -2,24 +2,20 @@
 
 namespace App\Units\Auth\Http\Controllers;
 
-use App\Core\User;
-use Validator;
+use App\Domains\Users\Contracts\UserRepository;
+use App\Domains\Users\User;
 use App\Core\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
+/**
+ * Class RegisterController.
+ *
+ * This controller handles the registration of new users as well as their
+ * validation and creation. By default this controller uses a trait to
+ * provide this functionality without requiring any additional code.
+ */
 class RegisterController extends Controller
 {
-    /*
-    |--------------------------------------------------------------------------
-    | Register Controller
-    |--------------------------------------------------------------------------
-    |
-    | This controller handles the registration of new users as well as their
-    | validation and creation. By default this controller uses a trait to
-    | provide this functionality without requiring any additional code.
-    |
-    */
-
     use RegistersUsers;
 
     /**
@@ -30,11 +26,32 @@ class RegisterController extends Controller
     protected $redirectTo = '/home';
 
     /**
-     * Create a new controller instance.
+     * @var UserRepository
      */
-    public function __construct()
+    protected $repository;
+
+    /**
+     * RegisterController constructor.
+     *
+     * @param UserRepository $repository
+     */
+    public function __construct(UserRepository $repository)
     {
+        // force the user being guest to register.
         $this->middleware('guest');
+
+        // assign the repository on the controller instance.
+        $this->repository = $repository;
+    }
+
+    /**
+     * Show the application registration form.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function showRegistrationForm()
+    {
+        return view('auth::register');
     }
 
     /**
@@ -46,7 +63,7 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
-        return Validator::make($data, [
+        return app('validator')->make($data, [
             'name' => 'required|max:255',
             'email' => 'required|email|max:255|unique:users',
             'password' => 'required|min:6|confirmed',
@@ -62,7 +79,7 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        return $this->repository->create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),

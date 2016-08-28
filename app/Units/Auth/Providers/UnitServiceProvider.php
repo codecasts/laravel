@@ -2,23 +2,18 @@
 
 namespace App\Units\Auth\Providers;
 
-use Illuminate\Support\ServiceProvider;
+use App\Support\UnitServiceProvider as ServiceProvider;
 
 class UnitServiceProvider extends ServiceProvider
 {
-    /**
-     * Bootstrap any application services.
-     */
-    public function boot()
-    {
-    }
+    protected $alias = 'auth';
 
-    /**
-     * Register any application services.
-     */
-    public function register()
-    {
-        $this->app->register(AuthServiceProvider::class);
-        $this->app->register(RouteServiceProvider::class);
-    }
+    protected $hasViews = true;
+
+    protected $hasTranslations = true;
+
+    protected $providers = [
+        AuthServiceProvider::class,
+        RouteServiceProvider::class,
+    ];
 }
