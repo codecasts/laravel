@@ -5,3 +5,5 @@
 Homestead.json
 Homestead.yaml
 .env
+# temporary for support package development
+/support
