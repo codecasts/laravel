@@ -26,6 +26,10 @@ class Web extends RouteFile
 
         // Password Reset routes.
         $this->passwordResetRoutes();
+
+        $this->router->get('/user', function (Request $request) {
+            return $request->user();
+        })->middleware('auth:api');
     }
 
     protected function authenticationRoutes()

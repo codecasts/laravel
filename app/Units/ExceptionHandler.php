@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Core\Exceptions;
+namespace App\Units;
 
 use Exception;
 use Illuminate\Auth\AuthenticationException;
-use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Foundation\Exceptions\Handler;
 
-class Handler extends ExceptionHandler
+class ExceptionHandler extends Handler
 {
     /**
      * A list of the exception types that should not be reported.
