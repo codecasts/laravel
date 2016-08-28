@@ -201,42 +201,6 @@
             "time": "2015-11-09 22:51:51"
         },
         {
-            "name": "codecasts/domain",
-            "version": "1.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/codecasts/domain.git",
-                "reference": "e179c35465c3420a9ecc77206a9ae4a147101150"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/codecasts/domain/zipball/e179c35465c3420a9ecc77206a9ae4a147101150",
-                "reference": "e179c35465c3420a9ecc77206a9ae4a147101150",
-                "shasum": ""
-            },
-            "require": {
-                "artesaos/migrator": "^1.1"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Codecasts\\Domain\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Diego Hernandes",
-                    "email": "diego@hernandev.com"
-                }
-            ],
-            "description": "Domain Support Providers and Base Classes",
-            "time": "2016-08-28 00:01:59"
-        },
-        {
             "name": "codecasts/presenter",
             "version": "1.0.1",
             "source": {
@@ -271,23 +235,22 @@
         },
         {
             "name": "codecasts/support",
-            "version": "1.0.2",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/codecasts/support.git",
-                "reference": "a6e57439dbdc0376a104af36a8e00736e3631be0"
+                "reference": "f88e4b7815b87fcc2bd6af58544b4405063d4cb7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codecasts/support/zipball/a6e57439dbdc0376a104af36a8e00736e3631be0",
-                "reference": "a6e57439dbdc0376a104af36a8e00736e3631be0",
+                "url": "https://api.github.com/repos/codecasts/support/zipball/f88e4b7815b87fcc2bd6af58544b4405063d4cb7",
+                "reference": "f88e4b7815b87fcc2bd6af58544b4405063d4cb7",
                 "shasum": ""
             },
             "require": {
                 "artesaos/migrator": "^1.1",
                 "artesaos/shield": "^2.0",
                 "artesaos/warehouse": "^2.0",
-                "codecasts/domain": "^1.0",
                 "codecasts/presenter": "^1.0"
             },
             "type": "library",
@@ -307,7 +270,7 @@
                 }
             ],
             "description": "codecasts/laravel support meta-package.",
-            "time": "2016-08-26 08:23:08"
+            "time": "2016-08-28 03:43:05"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",

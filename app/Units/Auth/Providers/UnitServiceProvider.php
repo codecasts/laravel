@@ -2,7 +2,7 @@
 
 namespace App\Units\Auth\Providers;
 
-use App\Support\UnitServiceProvider as ServiceProvider;
+use Codecasts\Support\Units\ServiceProvider;
 
 class UnitServiceProvider extends ServiceProvider
 {

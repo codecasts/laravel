@@ -3,7 +3,7 @@
 namespace App\Domains\Users\Database\Factories;
 
 use App\Domains\Users\User;
-use Codecasts\Domain\ModelFactory;
+use Codecasts\Support\Domain\ModelFactory;
 
 /**
  * Class UserFactory.
