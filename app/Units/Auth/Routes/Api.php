@@ -1,9 +1,8 @@
 <?php
 
-namespace App\Core\Routes;
+namespace App\Units\Auth\Routes;
 
 use Codecasts\Support\Http\Routing\RouteFile;
-use Illuminate\Http\Request;
 
 /**
  * Api Routes.
@@ -19,8 +18,5 @@ class Api extends RouteFile
      */
     public function routes()
     {
-        $this->router->get('/user', function (Request $request) {
-            return $request->user();
-        })->middleware('auth:api');
     }
 }

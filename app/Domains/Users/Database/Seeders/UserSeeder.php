@@ -8,7 +8,7 @@ use Illuminate\Database\Seeder;
 /**
  * Class UsersSeeders.
  */
-class UsersSeeder extends Seeder
+class UserSeeder extends Seeder
 {
     public function run()
     {

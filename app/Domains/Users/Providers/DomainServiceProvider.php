@@ -7,11 +7,11 @@ use App\Domains\Users\Database\Factories\UserFactory;
 use App\Domains\Users\Database\Migrations\CreateUsersTable;
 use App\Domains\Users\Database\Migrations\CreatePasswordResetsTable;
 use App\Domains\Users\Database\Seeders\UsersSeeder;
+use App\Domains\Users\Contracts;
+use App\Domains\Users\Repositories;
 
 /**
  * Class DomainServiceProvider.
- *
- * @package App\Domains\Users\Providers
  */
 class DomainServiceProvider extends ServiceProvider
 {
@@ -21,10 +21,10 @@ class DomainServiceProvider extends ServiceProvider
     protected $alias = 'users';
 
     /**
-     * @var array $bindings
+     * @var array
      */
     protected $bindings = [
-
+        Contracts\UserRepository::class => Repositories\UserRepository::class,
     ];
 
     protected $migrations = [
@@ -39,5 +39,4 @@ class DomainServiceProvider extends ServiceProvider
     protected $factories = [
         UserFactory::class,
     ];
-
 }

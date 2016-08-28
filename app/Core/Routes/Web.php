@@ -22,7 +22,6 @@ class Web extends RouteFile
             return view('welcome');
         });
 
-
         $this->router->get('/home', 'HomeController@index');
     }
 }

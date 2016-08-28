@@ -11,12 +11,12 @@ use Codecasts\Domain\ModelFactory;
 class UserFactory extends ModelFactory
 {
     /**
-     * @var User Factory for the User Model.
+     * @var User Factory for the User Model
      */
     protected $model = User::class;
 
     /**
-     * Define the User's Model Factory
+     * Define the User's Model Factory.
      */
     public function fields()
     {

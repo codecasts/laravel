@@ -2,12 +2,19 @@
 
 namespace App\Domains\Users;
 
+use App\Domains\Users\Presenters\UserPresenter;
+use Codecasts\Presenter\Presentable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
-    use Notifiable;
+    use Presentable, Notifiable;
+
+    /**
+     * @var string User Presenter class
+     */
+    protected $presenter = UserPresenter::class;
 
     /**
      * The attributes that are mass assignable.

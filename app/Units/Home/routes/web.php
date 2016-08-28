@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-/** @var \Illuminate\Routing\Router $router */
+/* @var \Illuminate\Routing\Router $router */
 
 // Authentication Routes...
 $router->get('login', 'Auth\LoginController@showLoginForm')->name('login');

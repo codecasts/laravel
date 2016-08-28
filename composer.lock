@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c6d0f4562d9c84f849d07ce49627c056",
-    "content-hash": "fe0d7bddf35c2632a761739e0024f4e0",
+    "hash": "85d418497edb2109bd43694f7a9aa12c",
+    "content-hash": "4ab857c214fc495f0eed0d81f95c8ab0",
     "packages": [
         {
             "name": "artesaos/migrator",
@@ -202,16 +202,16 @@
         },
         {
             "name": "codecasts/domain",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/codecasts/domain.git",
-                "reference": "51ab6dc8d48ba1a87c7dab28a50f694c6eab2e5b"
+                "reference": "e179c35465c3420a9ecc77206a9ae4a147101150"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codecasts/domain/zipball/51ab6dc8d48ba1a87c7dab28a50f694c6eab2e5b",
-                "reference": "51ab6dc8d48ba1a87c7dab28a50f694c6eab2e5b",
+                "url": "https://api.github.com/repos/codecasts/domain/zipball/e179c35465c3420a9ecc77206a9ae4a147101150",
+                "reference": "e179c35465c3420a9ecc77206a9ae4a147101150",
                 "shasum": ""
             },
             "require": {
@@ -234,7 +234,7 @@
                 }
             ],
             "description": "Domain Support Providers and Base Classes",
-            "time": "2016-08-26 06:37:16"
+            "time": "2016-08-28 00:01:59"
         },
         {
             "name": "codecasts/presenter",
@@ -556,16 +556,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.3.2",
+            "version": "v5.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "2213ca11f6fa849ca7c96308934cc6881ab434e8"
+                "reference": "7159ffbadc79558a42ece2cdd1ec2e7e13105b5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/2213ca11f6fa849ca7c96308934cc6881ab434e8",
-                "reference": "2213ca11f6fa849ca7c96308934cc6881ab434e8",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/7159ffbadc79558a42ece2cdd1ec2e7e13105b5d",
+                "reference": "7159ffbadc79558a42ece2cdd1ec2e7e13105b5d",
                 "shasum": ""
             },
             "require": {
@@ -679,7 +679,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2016-08-24 23:23:29"
+            "time": "2016-08-26 21:40:26"
         },
         {
             "name": "league/flysystem",
@@ -763,6 +763,69 @@
                 "storage"
             ],
             "time": "2016-08-10 08:55:11"
+        },
+        {
+            "name": "league/fractal",
+            "version": "0.13.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/fractal.git",
+                "reference": "3caeefbad51bce7a06947321938128512f42346c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/fractal/zipball/3caeefbad51bce7a06947321938128512f42346c",
+                "reference": "3caeefbad51bce7a06947321938128512f42346c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "illuminate/contracts": "~5.0",
+                "mockery/mockery": "~0.9",
+                "pagerfanta/pagerfanta": "~1.0.0",
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~1.5",
+                "zendframework/zend-paginator": "~2.3"
+            },
+            "suggest": {
+                "illuminate/pagination": "The Illuminate Pagination component.",
+                "pagerfanta/pagerfanta": "Pagerfanta Paginator",
+                "zendframework/zend-paginator": "Zend Framework Paginator"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.13-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Fractal\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Phil Sturgeon",
+                    "email": "me@philsturgeon.uk",
+                    "homepage": "http://philsturgeon.uk/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Handle the output of complex data structures ready for API output.",
+            "homepage": "http://fractal.thephpleague.com/",
+            "keywords": [
+                "api",
+                "json",
+                "league",
+                "rest"
+            ],
+            "time": "2015-10-07 14:48:58"
         },
         {
             "name": "monolog/monolog",

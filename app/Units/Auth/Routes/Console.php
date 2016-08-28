@@ -1,9 +1,8 @@
 <?php
 
-namespace App\Core\Routes;
+namespace App\Units\Auth\Routes;
 
 use Codecasts\Support\Console\Routing\RouteFile;
-use Illuminate\Foundation\Inspiring;
 
 /**
  * Console Routes.
@@ -19,8 +18,5 @@ class Console extends RouteFile
      */
     public function routes()
     {
-        $this->artisan->command('inspire', function () {
-            $this->comment(Inspiring::quote());
-        });
     }
 }

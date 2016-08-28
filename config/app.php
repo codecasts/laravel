@@ -187,6 +187,11 @@ return [
          */
         App\Domains\Users\Providers\DomainServiceProvider::class,
 
+        /**
+         * Units
+         */
+        App\Units\Auth\Providers\UnitServiceProvider::class,
+
     ],
 
     /*
