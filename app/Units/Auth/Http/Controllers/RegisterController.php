@@ -4,7 +4,7 @@ namespace App\Units\Auth\Http\Controllers;
 
 use App\Domains\Users\Contracts\UserRepository;
 use App\Domains\Users\User;
-use App\Core\Http\Controllers\Controller;
+use Codecasts\Support\Http\Controller;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
 /**

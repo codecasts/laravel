@@ -2,6 +2,8 @@
 
 namespace App\Units\Home\Http\Controllers;
 
+use Codecasts\Support\Http\Controller;
+
 /**
  * Class HomeController.
  */
@@ -22,6 +24,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('home::home');
     }
 }
