@@ -3,6 +3,7 @@
 namespace App\Units\Home\Providers;
 
 use App\Units\Home\Routes\Api;
+use App\Units\Home\Routes\Console;
 use App\Units\Home\Routes\Web;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
@@ -33,6 +34,8 @@ class RouteServiceProvider extends ServiceProvider
         $this->mapWebRoutes();
 
         $this->mapApiRoutes();
+
+        $this->mapConsoleRoutes();
     }
 
     /**
@@ -60,5 +63,17 @@ class RouteServiceProvider extends ServiceProvider
             'namespace' => $this->namespace,
             'prefix' => 'api',
         ]))->register();
+    }
+
+    /**
+     * Define the "console" routes for the application.
+     *
+     * Those routes are the ones defined by
+     * artisan->command instead of registered directly
+     * on the ConsoleKernel.
+     */
+    protected function mapConsoleRoutes()
+    {
+        (new Console())->register();
     }
 }
