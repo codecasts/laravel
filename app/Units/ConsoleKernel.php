@@ -32,6 +32,5 @@ class ConsoleKernel extends Kernel
      */
     protected function commands()
     {
-        //
     }
 }

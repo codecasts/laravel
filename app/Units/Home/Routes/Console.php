@@ -18,7 +18,7 @@ class Console extends RouteFile
      */
     public function routes()
     {
-        $this->artisan->command('example', function() {
+        $this->artisan->command('example', function () {
             $this->info('Example Console Route!');
         });
     }
