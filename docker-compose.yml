@@ -1,0 +1,56 @@
+# v2 sintax
+version: '2'
+
+# Named volumes
+volumes:
+  # MySQL Data
+  laravel-mysql-data:
+    driver: local
+  # Redis Data
+  laravel-redis-data:
+    driver: local
+
+services:
+  # MySQL (5.7)
+  mysql:
+    image: ambientum/mysql:5.7
+    container_name: laravel-mysql
+    volumes:
+      - laravel-mysql-data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=laravel
+      - MYSQL_DATABASE=laravel
+      - MYSQL_USER=laravel
+      - MYSQL_PASSWORD=laravel
+
+  # Redis
+  cache:
+    image: ambientum/redis:3.2
+    container_name: laravel-redis
+    ports:
+      - "6379:6379"
+
+  # PHP (with Caddy)
+  app:
+    image: ambientum/php:7.0-caddy
+    container_name: laravel-php
+    volumes:
+      - .:/var/www/app
+    ports:
+      - "80:8080"
+    links:
+      - mysql
+      - cache
+
+  # Laravel Queues
+#  queue:
+#    image: ambientum/php:7.0
+#    container_name: laravel-queue
+#    command: php artisan queue:listen
+#    volumes:
+#      - .:/var/www/app
+#    links:
+#      - mysql
+#      - cache
