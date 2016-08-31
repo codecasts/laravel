@@ -167,6 +167,7 @@ return [
          * Package Service Providers...
          */
         Migrator\MigrationServiceProvider::class,
+        Artesaos\Warehouse\WarehouseServiceProvider::class,
 
         /**
          * Support Service Providers...
@@ -176,11 +177,6 @@ return [
         /*
          * Application Service Providers...
          */
-        //App\Core\Providers\AppServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        //App\Core\Providers\AuthServiceProvider::class,
-        //App\Core\Providers\EventServiceProvider::class,
-        //App\Core\Providers\RouteServiceProvider::class,
 
         /**
          * Domains
@@ -190,6 +186,7 @@ return [
         /**
          * Units
          */
+        App\Units\Core\Providers\UnitServiceProvider::class,
         App\Units\Auth\Providers\UnitServiceProvider::class,
         App\Units\Home\Providers\UnitServiceProvider::class,
 
