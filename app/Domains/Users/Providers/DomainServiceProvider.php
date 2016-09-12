@@ -6,7 +6,7 @@ use Codecasts\Support\Domain\ServiceProvider;
 use App\Domains\Users\Database\Factories\UserFactory;
 use App\Domains\Users\Database\Migrations\CreateUsersTable;
 use App\Domains\Users\Database\Migrations\CreatePasswordResetsTable;
-use App\Domains\Users\Database\Seeders\UsersSeeder;
+use App\Domains\Users\Database\Seeders\UserSeeder;
 use App\Domains\Users\Contracts;
 use App\Domains\Users\Repositories;
 
@@ -33,7 +33,7 @@ class DomainServiceProvider extends ServiceProvider
     ];
 
     protected $seeders = [
-        UsersSeeder::class,
+        UserSeeder::class,
     ];
 
     protected $factories = [
