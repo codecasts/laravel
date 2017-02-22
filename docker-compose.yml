@@ -1,4 +1,4 @@
-# v2 sintax
+# v2 syntax
 version: '2'
 
 # Named volumes
@@ -37,9 +37,7 @@ services:
 
   # PHP (with Caddy)
   web:
-    image: ambientum/php:7.0-caddy
-    #image: ambientum/php:7.0-nginx
-    #image: ambientum/php:7.0-apache
+    image: ambientum/php:7.1-nginx
     container_name: sandbox-web
     volumes:
       - .:/var/www/app
@@ -51,7 +49,7 @@ services:
 
   # Laravel Queues
   queue:
-    image: ambientum/php:7.0
+    image: ambientum/php:7.1
     container_name: sandbox-queue
     command: php artisan queue:listen
     volumes:
