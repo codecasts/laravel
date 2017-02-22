@@ -1,11 +1,9 @@
 /node_modules
 /public/storage
+/public/hot
+/storage/*.key
 /vendor
 /.idea
 Homestead.json
 Homestead.yaml
 .env
-composer.lock
-
-# temporary for support package development
-/support
